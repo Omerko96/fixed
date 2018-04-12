@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fixed</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Master Styles -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- Navigation -->
+
+    <nav id="navigation">
+      <a href="#facebook">Facebook</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#linkedin">Linkedin</a>
+      <a href="#github">Github</a>
+      <a href="#gmail">Gmail</a>
+    </nav>  <!-- End of Navigation -->
+    
+    <!-- Wrappers -->
+
+    <div id="facebook" class="wrapper facebook-wrapper">
+      <div class="left-side"></div> <!-- End of Left Side -->
+      <div class="right-side">
+        <p>
+          <a href="https://www.facebook.com/stefanblade.omerovic" class="link">Here you can check my Facebook Profile!</a>
+        </p>
+      </div>  <!-- End of Right Side -->
+    </div>  <!-- End of Facebook Wrapper -->
+
+    <div id="instagram" class="wrapper instagram-wrapper">
+      <div class="left-side"></div> <!-- End of Left Side -->
+      <div class="right-side">
+        <p>
+          <a href="https://www.instagram.com/omerko96/?hl=en" class="link">Here you can check my Instagram Profile!</a>
+        </p>
+      </div>  <!-- End of Right Side -->
+    </div>  <!-- End of Instagram Wrapper -->
+
+    <div id="linkedin" class="wrapper linkedin-wrapper">
+      <div class="left-side"></div> <!-- End of Left Side -->
+      <div class="right-side">
+        <p>
+          <a href="https://www.linkedin.com/in/stefan-omerovic-7b9757135/" class="link">Here you can check my Linkedin Profile!</a>
+        </p>
+      </div>  <!-- End of Right Side -->
+    </div>  <!-- End of Instagram Wrapper -->
+
+    <div id="github" class="wrapper github-wrapper">
+      <div class="left-side"></div> <!-- End of Left Side -->
+      <div class="right-side">
+        <p>
+          <a href="https://github.com/Omerko96" class="link">Here you can check my Github Profile!</a>
+        </p>
+      </div>  <!-- End of Right Side -->
+    </div>  <!-- End of Github Wrapper -->
+
+    <div id="gmail" class="wrapper gmail-wrapper">
+      <div class="left-side"></div> <!-- End of Left Side -->
+      <div class="right-side">
+        <p>Here you can contact me with Gmails!</p>
+        <p>
+          <a href="mailto:stefan.omerovic96@gmail.com" class="link">stefan.omerovic96@gmail.com</a>
+        </p>
+        <p>
+          <a href="mailto:omerko1996@gmail.com" class="link">omerko1996@gmail.com</a>
+        </p>
+      </div>  <!-- End of Right Side -->
+    </div>  <!-- End of Github Wrapper -->
+
+    <!-- jQuery Functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script>
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1500);
+      });
+    </script>
+
+  </body>
+</html>
